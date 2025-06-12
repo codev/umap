@@ -2,7 +2,7 @@
 service: umap
 
 # Name of the container image.
-image: codev/umap
+image: ashre/umap
 
 # Deploy to these servers.
 servers:
@@ -23,8 +23,7 @@ proxy:
 
 # Credentials for your image host.
 registry:
-  server: containerlist.codev.uk
-  username: registry-codev-main-user
+  username: ashre
   password:
     - KAMAL_REGISTRY_PASSWORD
 
