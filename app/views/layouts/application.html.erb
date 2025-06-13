@@ -2,9 +2,19 @@
 <html>
   <head>
     <title><%= content_for(:title) || "Umap" %></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.2.0/maptiler-sdk.umd.min.js"></script>
+    <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.2.0/maptiler-sdk.css" rel="stylesheet" />
+    <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v4.0.2/leaflet-maptilersdk.umd.min.js"></script>
+    <style>
+      #map {position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+    </style>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
